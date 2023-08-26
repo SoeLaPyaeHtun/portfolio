@@ -75,3 +75,8 @@
 /Users/soelapyaehtun/Projects/Profile_Portfolio/pp_backend/obj/Debug/net7.0/pp_backend.pdb
 /Users/soelapyaehtun/Projects/Profile_Portfolio/pp_backend/obj/Debug/net7.0/pp_backend.genruntimeconfig.cache
 /Users/soelapyaehtun/Projects/Profile_Portfolio/pp_backend/obj/Debug/net7.0/ref/pp_backend.dll
+/Users/soelapyaehtun/Projects/Profile_Portfolio/pp_backend/bin/Debug/net7.0/BouncyCastle.Cryptography.dll
+/Users/soelapyaehtun/Projects/Profile_Portfolio/pp_backend/bin/Debug/net7.0/MailKit.dll
+/Users/soelapyaehtun/Projects/Profile_Portfolio/pp_backend/bin/Debug/net7.0/MimeKit.dll
+/Users/soelapyaehtun/Projects/Profile_Portfolio/pp_backend/bin/Debug/net7.0/System.Security.Cryptography.Pkcs.dll
+/Users/soelapyaehtun/Projects/Profile_Portfolio/pp_backend/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll

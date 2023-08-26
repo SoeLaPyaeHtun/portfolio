@@ -9,4 +9,5 @@ public class mailDBContext : DbContext{
     public mailDBContext(DbContextOptions<mailDBContext> options) : base(options) { }
 
     public DbSet<HireMe> HireMe { get; set; }
+    public DbSet<VistiMe> VisitMe { get; set; }
 }

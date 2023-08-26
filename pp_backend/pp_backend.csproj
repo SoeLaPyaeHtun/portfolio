@@ -12,5 +12,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10"/>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.10"/>
+    <PackageReference Include="MailKit" Version="4.1.0"/>
   </ItemGroup>
 </Project>

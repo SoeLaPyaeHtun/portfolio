@@ -19,5 +19,8 @@ public class HireMe{
     [Column(TypeName = "nvarchar(250)")]
     public string Message { get; set; } = string.Empty;
 
+    [Column(TypeName = "nvarchar(50)")] 
+    public string Ip {get; set; } = string.Empty;
+
     public DateTime recievedDate { get; set; } = DateTime.Now;
 }
