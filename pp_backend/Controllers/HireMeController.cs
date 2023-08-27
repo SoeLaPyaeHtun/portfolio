@@ -23,11 +23,11 @@ public class HireMeController : ControllerBase
         
     }
 
-    // [HttpGet]
-    // public async Task<ActionResult<List<HireMe>>> getHireMeMail()
-    // {
-    //     return Ok(await _context.HireMe.ToListAsync());
-    // }
+    [HttpGet]
+    public async Task<ActionResult<List<HireMe>>> getHireMeMail()
+    {
+        return Ok(await _context.HireMe.ToListAsync());
+    }
 
 
     [HttpPost]
@@ -39,16 +39,20 @@ public class HireMeController : ControllerBase
              await _context.SaveChangesAsync();
 
             MailMessage message = new MailMessage();
-            message.From = new MailAddress("siaehtun@gmail.com");
-            message.Subject = "Test Subject";
-            message.To.Add(new MailAddress("lapyae.945@gmail.com"));
-            message.Body = "<html><body> <h1>Test Body<h1> </body></html>";
+            message.From = new MailAddress("singlapyaehtun@gmail.com");
+           
+            message.Subject = "Thanks for reaching out.";
+            message.To.Add(new MailAddress(hireMeMail.Mail.ToString()));
+            message.Body = "<html><body><h3>Hello ,<br /><br />Thank you for contacting me. <br />"+
+                        "This is an automated response to confirm that you got your contact. <br />" +
+                        "I will get back to you as soon as possible. <br /><br />Thanks.</h3>" +
+                        "<h5>Best Regards,<br />Soe La Pyae Htun<br />+65 86470728<br /></h5></body ></html > ";
             message.IsBodyHtml = true;
 
             var smtpClient = new System.Net.Mail.SmtpClient("smtp.gmail.com")
             {
                 Port = 587, 
-                Credentials = new NetworkCredential("singlapyn@gmail.com", "kzhrhaaqyivtukuz"),
+                Credentials = new NetworkCredential("singlapyaehtun@gmail.com", "goievbsimpkllixj"),
                 EnableSsl = true,
             };
 
